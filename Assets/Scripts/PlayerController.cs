@@ -4,7 +4,7 @@ using System.Collections;
 public class PlayerController : MonoBehaviour {
 
 	// Use this for initialization
-	float movespeed = 5;
+	float movespeed = 10;
 
 	float rotationSpeed = 5;
 
