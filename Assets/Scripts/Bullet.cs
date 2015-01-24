@@ -6,6 +6,11 @@ public class Bullet : MonoBehaviour {
 	public Vector2 velocity;
 	public string type;
 
+	public Bullet()
+	{
+	
+	}
+	
 	// Use this for initialization
 	void Start () {
 	
