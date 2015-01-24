@@ -5,6 +5,8 @@ public class PlayerController : MonoBehaviour {
 
 	// Use this for initialization
 	float movespeed = 10;
+
+	float angle;
 	
 	void Start() {
 
@@ -15,8 +17,10 @@ public class PlayerController : MonoBehaviour {
 		var direction = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
 		direction *= movespeed;
 		rigidbody2D.AddForce(direction);
-		if (direction != Vector2.zero) {
-			float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+
+		var faceDirection = new Vector2(Input.GetAxis ("Shoot X"), Input.GetAxis ("Shoot Y"));
+		if (faceDirection != Vector2.zero) {
+			angle = Mathf.Atan2(faceDirection.y, faceDirection.x) * Mathf.Rad2Deg;
 			transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 		}
 	}
