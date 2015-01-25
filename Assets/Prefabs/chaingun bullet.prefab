@@ -84,7 +84,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7aaa767580818ec4898e5896c896ddd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vel: 5
+  vel: 10
   position: {x: 0, y: 0}
   type: chaingun
   damage: 50

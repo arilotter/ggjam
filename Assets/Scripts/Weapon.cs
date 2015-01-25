@@ -29,9 +29,17 @@ public class Weapon : MonoBehaviour {
 		{
 			Bullet clone;
 
-			string sideStr = "left";
+			string sideStr = "";
+			if (side > 0)
+			{
+				sideStr = "left";
+				GetComponent<Animator>().SetTrigger("fire left");
+			}
 			if (side < 0)
+			{
 				sideStr = "right";
+				GetComponent<Animator>().SetTrigger("fire right");
+			}
 			Transform weaponSide;
 			weaponSide = transform.Find(sideStr);
 
@@ -42,6 +50,7 @@ public class Weapon : MonoBehaviour {
 			//transform.Translate(0, offset.y*side, 0);
 			side *= -1;
 			clone.shooter = parentTag;
+			
 			clone.rigidbody2D.velocity = transform.right * clone.vel;
 			
 			wait = fireSpeed;

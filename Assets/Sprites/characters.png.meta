@@ -159,10 +159,10 @@ TextureImporter:
     - name: plasma_w1
       rect:
         serializedVersion: 2
-        x: 48
-        y: 372
-        width: 41
-        height: 12
+        x: 192
+        y: 96
+        width: 62
+        height: 30
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -389,30 +389,30 @@ TextureImporter:
     - name: plasma_w2
       rect:
         serializedVersion: 2
-        x: 48
-        y: 356
-        width: 41
-        height: 12
+        x: 192
+        y: 62
+        width: 62
+        height: 30
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: spray_w1
       rect:
         serializedVersion: 2
-        x: 48
-        y: 341
-        width: 33
-        height: 11
+        x: 193
+        y: 419
+        width: 63
+        height: 23
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: spray_w2
       rect:
         serializedVersion: 2
-        x: 48
-        y: 325
-        width: 33
-        height: 11
+        x: 193
+        y: 392
+        width: 63
+        height: 23
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
