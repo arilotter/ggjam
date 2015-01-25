@@ -68,6 +68,5 @@ public class TwoPlayerCamera : MonoBehaviour {
 			mask.transform.position = new Vector3(_p2Camera.transform.position.x, _p2Camera.transform.position.y, -9);
 			mask.transform.Translate(Vector3.up * -mask.transform.localScale.y/2);
 		}
-
 	}
 }
