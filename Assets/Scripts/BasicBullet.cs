@@ -8,8 +8,7 @@ public class BasicBullet : Bullet {
 		type="basic";
 		vel = 5;
 		//public Vector2 position;
-		fireSpeed = 5;
-	
+
 	}
 
 }

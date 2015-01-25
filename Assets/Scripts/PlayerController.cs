@@ -37,16 +37,34 @@ public class PlayerController : MonoBehaviour {
 			if (weapon.fireGun())
 				energy -= weapon.energy;
 		}
+		if (energy < maxEnergy)
+			energy+= 2;
 	}
 	
-	void OnCollisionEnter2D(Collision2D _col){
-		Debug.Log(_col.gameObject.tag);
-		if (_col.gameObject.tag == "bullet")
+	void HitByBullet(ArrayList list){
+	
+		Debug.Log(list[1]);
+		if (!list[1].Equals(gameObject.tag))
 		{
-			Bullet bullet = _col.gameObject.GetComponent<Bullet>();
+			Debug.Log(gameObject.tag);
+			GameObject bul = (GameObject)list[0];
+			Bullet bullet = bul.GetComponent<Bullet>();
 			health -= bullet.getDamage();
+			
+			// Get the Animator component from your gameObject
+			Animator anim = bul.GetComponent<Animator>();
+			// Sets the value
+			anim.SetTrigger("explode"); 
+			StartCoroutine(waitForExplosion(bul));
+
+			
 			Debug.Log(health);
 		}
+	}
+	
+	IEnumerator waitForExplosion(GameObject _gameObject) {
+		yield return new WaitForSeconds(0.5f); //this will wait 5 seconds
+		DestroyObject(_gameObject);
 	}
 	
 	public bool fire(int _availEnergy, int _energy){

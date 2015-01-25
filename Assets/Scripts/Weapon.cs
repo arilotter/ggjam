@@ -6,13 +6,15 @@ public class Weapon : MonoBehaviour {
 	public Bullet _bullet;
 	public enum WeaponType{rpgs, chainGun, plasma};	
 	public WeaponType type;
+	public int fireSpeed = 0;
 	public int energy;
+	
 	int wait = 0;
+	int side = 1;
 	//public PlayerController player;
 
 	// Use this for initialization
 	void Start () {
-	
 	}
 	
 	// Update is called once per frame
@@ -24,12 +26,18 @@ public class Weapon : MonoBehaviour {
 	public bool fireGun(){
 		if (wait == 0)
 		{
-			Debug.Log(wait);
 			Bullet clone;
+			Vector3 offset = transform.parent.gameObject.GetComponent<SpriteRenderer>().sprite.bounds.extents;
 			clone = Instantiate(_bullet, transform.position, transform.rotation) as Bullet;
-			//clone.velocity = transform.TransformDirection(Vector3.forward * 10);		
+			transform.Translate(0, offset.y*side, 0);
+			side *= -1;
 			clone.rigidbody2D.velocity = transform.right * clone.vel;
-			wait = clone.fireSpeed;
+			clone.shooter = transform.parent.gameObject.tag;
+
+			
+			
+			
+			wait = fireSpeed;
 			return true;
 		}
 		else

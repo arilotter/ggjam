@@ -6,14 +6,14 @@ public class Bullet : MonoBehaviour {
 	public int vel;
 	public Vector2 position;
 	public string type;
-	public int fireSpeed;
-	public int damage;
 
+	public int damage;
+	public string shooter;
+	
 	public Bullet()
 	{
 		vel = 5;
 		//public Vector2 position;
-		fireSpeed = 50;	
 		damage = 50;
 	}
 	
@@ -33,7 +33,12 @@ public class Bullet : MonoBehaviour {
   }
   
   	void OnCollisionEnter2D(Collision2D _col){
-		DestroyObject(gameObject);
+		var parmas = new ArrayList();
+		parmas.Add(gameObject);
+		parmas.Add(shooter);
+
+		_col.gameObject.SendMessage("HitByBullet", parmas,
+    SendMessageOptions.DontRequireReceiver);
 	}
 	
 	public int getDamage(){
