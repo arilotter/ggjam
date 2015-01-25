@@ -27,7 +27,8 @@ public class PlayerController : MonoBehaviour {
 		angle = Mathf.Atan2(faceDirection.y, faceDirection.x) * Mathf.Rad2Deg;
 		transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
-		if(Input.GetAxis("P" + playerNum + " Shoot") < 0.4) { // right trigger pressed
+		Debug.Log (Input.GetAxis("P" + playerNum + " Shoot"));
+		if(Input.GetAxis("P" + playerNum + " Shoot") < 0) { // right trigger pressed
 			weapon.fireGun();
 		}
 	}
