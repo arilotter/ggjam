@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update() {
+	void FixedUpdate() {
 		//Debug.Log(energy);
 		Vector2 direction = new Vector2(XCI.GetAxis(XboxAxis.LeftStickX, playerNum), XCI.GetAxis(XboxAxis.LeftStickY, playerNum));
 		direction *= movespeed;
@@ -48,7 +48,6 @@ public class PlayerController : MonoBehaviour {
 		Debug.Log(list[1]);
 		if (!list[1].Equals(gameObject.tag))
 		{
-			Debug.Log(gameObject.tag);
 			GameObject bul = (GameObject)list[0];
 			Bullet bullet = bul.GetComponent<Bullet>();
 			health -= bullet.getDamage();
