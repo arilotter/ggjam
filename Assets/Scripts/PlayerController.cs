@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
-using XboxCtrlrInput;
 
 public class PlayerController : MonoBehaviour {
 
@@ -45,7 +44,7 @@ public class PlayerController : MonoBehaviour {
 			
 		healthbar.size = (float)health/maxHealth;
 		energybar.size = (float)energy/maxEnergy;
-		Debug.Log((float)energy/maxEnergy);		
+		Debug.Log((float)energy / maxEnergy);		
 	}
 	
 	void HitByBullet(ArrayList list){

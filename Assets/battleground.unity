@@ -4510,6 +4510,14 @@ Prefab:
       propertyPath: m_CollisionDetection
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11433344, guid: 1007a6c99a2d5dc41a90d603ae417f92, type: 2}
+      propertyPath: movespeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5033344, guid: 1007a6c99a2d5dc41a90d603ae417f92, type: 2}
+      propertyPath: m_LinearDrag
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1007a6c99a2d5dc41a90d603ae417f92, type: 2}
   m_RootGameObject: {fileID: 1856663371}
@@ -6409,7 +6417,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5ff0d744edb6294faa44b86745dd5fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movespeed: 10
+  movespeed: 8
+  healthbar: {fileID: 0}
+  energybar: {fileID: 0}
   playerNum: 2
   weapon: {fileID: 0}
   maxHealth: 999999
@@ -6422,7 +6432,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 1954545793}
   m_GameObject: {fileID: 1155337074}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 4
   m_AngularDrag: .0500000007
   m_GravityScale: 1
   m_FixedAngle: 0
@@ -9698,7 +9708,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5ff0d744edb6294faa44b86745dd5fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movespeed: 10
+  movespeed: 8
+  healthbar: {fileID: 0}
+  energybar: {fileID: 0}
   playerNum: 1
   weapon: {fileID: 0}
   maxHealth: 999999
@@ -9711,7 +9723,7 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 767809202}
   m_GameObject: {fileID: 1856663371}
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 4
   m_AngularDrag: .0500000007
   m_GravityScale: 1
   m_FixedAngle: 0
@@ -10430,6 +10442,14 @@ Prefab:
     - target: {fileID: 5033344, guid: 1007a6c99a2d5dc41a90d603ae417f92, type: 2}
       propertyPath: m_CollisionDetection
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11433344, guid: 1007a6c99a2d5dc41a90d603ae417f92, type: 2}
+      propertyPath: movespeed
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5033344, guid: 1007a6c99a2d5dc41a90d603ae417f92, type: 2}
+      propertyPath: m_LinearDrag
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1007a6c99a2d5dc41a90d603ae417f92, type: 2}
