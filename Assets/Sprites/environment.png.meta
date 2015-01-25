@@ -235,8 +235,8 @@ TextureImporter:
         y: 0
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 3
+      pivot: {x: 1, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: teleporter_2
       rect:
@@ -245,8 +245,8 @@ TextureImporter:
         y: 0
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 3
+      pivot: {x: 1, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: teleporter_3
       rect:
@@ -255,8 +255,8 @@ TextureImporter:
         y: 0
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 3
+      pivot: {x: 1, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: teleporter_4
       rect:
@@ -265,8 +265,8 @@ TextureImporter:
         y: 0
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 3
+      pivot: {x: 1, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: teleporter_5
       rect:
@@ -275,8 +275,8 @@ TextureImporter:
         y: 0
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 3
+      pivot: {x: 1, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: teleporter_6
       rect:
@@ -285,8 +285,8 @@ TextureImporter:
         y: 0
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 3
+      pivot: {x: 1, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: teleporter_7
       rect:
@@ -295,8 +295,8 @@ TextureImporter:
         y: 0
         width: 64
         height: 64
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 3
+      pivot: {x: 1, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: environment_23
       rect:
