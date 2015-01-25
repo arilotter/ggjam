@@ -51,6 +51,7 @@ public class PlayerController : MonoBehaviour {
 		shieldbar.size = (float)shield/maxShield;
 	}
 	
+	
 	public void HitByBullet(int damage){
 		if(shield > 0) {
 			shield -= damage;
@@ -63,6 +64,7 @@ public class PlayerController : MonoBehaviour {
 		}
 	}
 	
+
 	/*void HitByBullet(ArrayList list){
 		if (!list[1].Equals(gameObject.tag))
 		{

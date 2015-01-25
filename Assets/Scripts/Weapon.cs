@@ -4,6 +4,7 @@ using System.Collections;
 public class Weapon : MonoBehaviour {
 
 	public Bullet _bullet;
+	public Bullet _superBullet;
 	public enum WeaponType{rpgs, chainGun, plasma};	
 	public WeaponType type;
 	public int fireSpeed = 0;
@@ -60,5 +61,11 @@ public class Weapon : MonoBehaviour {
 			wait --;
 		return false;
 		//_bullet.rigidbody2D.velocity = new Vector2(5, 0);
+	}
+	
+	public bool superFireGun()
+	{
+		//Bullet superShot = Instantiate(_bullet, weaponSide.transform.position, weaponSide.transform.rotation) as Bullet;
+		return true;
 	}
 }
