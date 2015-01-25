@@ -15,7 +15,7 @@ GameObject:
   - 95: {fileID: 9561274}
   m_Layer: 0
   m_Name: bullet
-  m_TagString: Untagged
+  m_TagString: bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,7 +27,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 175034}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -1.21599996, y: -.300999999, z: 0}
   m_LocalScale: {x: .5, y: .5, z: .5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -53,10 +53,10 @@ CircleCollider2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 175034}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Radius: .319999993
+  m_Radius: .280000001
   m_Center: {x: 0, y: 0}
 --- !u!95 &9561274
 Animator:
@@ -87,7 +87,8 @@ MonoBehaviour:
   vel: 3
   position: {x: 0, y: 0}
   type: 
-  fireSpeed: 25
+  damage: 50
+  shooter: 
 --- !u!212 &21275034
 SpriteRenderer:
   m_ObjectHideFlags: 1
