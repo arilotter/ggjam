@@ -44,10 +44,13 @@ public class PlayerController : MonoBehaviour {
 			
 		healthbar.size = (float)health/maxHealth;
 		energybar.size = (float)energy/maxEnergy;
-		Debug.Log((float)energy / maxEnergy);		
 	}
 	
-	void HitByBullet(ArrayList list){
+	public void HitByBullet(int damage){
+		health -= damage;
+	}
+	
+	/*void HitByBullet(ArrayList list){
 		if (!list[1].Equals(gameObject.tag))
 		{
 			GameObject bul = (GameObject)list[0];
@@ -62,15 +65,8 @@ public class PlayerController : MonoBehaviour {
 
 			
 		}
-	}
-	
-	IEnumerator waitForExplosion(GameObject _gameObject) {
-		float t = 0.5f;
-		
-		//yield return new WaitForSeconds(_gameObject.GetComponent<Bullet>().explosionTime);
-		yield return new WaitForSeconds(_gameObject.GetComponent<Bullet>().explosionTime);
-		DestroyObject(_gameObject);
-	}
+	}*/
+
 	
 	public bool shouldFire(int _availEnergy, int _energy){
 		return (Input.GetAxis("P" + playerNum + " Shoot") < 0) && (_availEnergy - _energy >= 0);

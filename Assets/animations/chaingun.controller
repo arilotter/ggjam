@@ -5,7 +5,7 @@ AnimatorController:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: plasma
+  m_Name: chaingun
   serializedVersion: 2
   m_AnimatorParameters:
   - m_Name: explode
@@ -17,7 +17,7 @@ AnimatorController:
   m_AnimatorLayers:
   - serializedVersion: 3
     m_Name: Base Layer
-    m_StateMachine: {fileID: 110787346}
+    m_StateMachine: {fileID: 110780286}
     m_Mask: {fileID: 0}
     m_BlendingMode: 0
     m_SyncedLayerIndex: -1
@@ -26,15 +26,15 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
---- !u!1101 &110126262
+--- !u!1101 &110158938
 Transition:
   serializedVersion: 2
   m_ObjectHideFlags: 3
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: 
-  m_SrcState: {fileID: 110264250}
-  m_DstState: {fileID: 110264252}
+  m_SrcState: {fileID: 110207916}
+  m_DstState: {fileID: 110207918}
   m_TransitionDuration: 0
   m_TransitionOffset: 0
   m_Conditions:
@@ -46,57 +46,57 @@ Transition:
   m_Solo: 0
   m_Mute: 0
   m_CanTransitionToSelf: 0
---- !u!1102 &110264250
+--- !u!1102 &110207916
 State:
   m_ObjectHideFlags: 3
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: plasma
+  m_Name: sprayer
   m_Speed: 1
   m_CycleOffset: 0
   m_Motions:
-  - {fileID: 7400000, guid: bdea8154aa820744db9f994799af15d2, type: 2}
-  m_ParentStateMachine: {fileID: 110787346}
-  m_Position: {x: 216, y: -36, z: 0}
-  m_IKOnFeet: 0
-  m_Mirror: 0
-  m_Tag: 
---- !u!1102 &110264252
-State:
-  m_ObjectHideFlags: 3
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: Plasma explode
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Motions:
-  - {fileID: 7400000, guid: b82f467aeba6e734c9b63735cfc00bbc, type: 2}
-  m_ParentStateMachine: {fileID: 110787346}
+  - {fileID: 7400000, guid: bdb9e1b84517fe64db5a8b7e91e4e44a, type: 2}
+  m_ParentStateMachine: {fileID: 110780286}
   m_Position: {x: 235, y: 65, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
---- !u!1107 &110787346
+--- !u!1102 &110207918
+State:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: chaingun hit
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Motions:
+  - {fileID: 7400000, guid: 68291b1a0a844754caeea1ace2aac839, type: 2}
+  m_ParentStateMachine: {fileID: 110780286}
+  m_Position: {x: 270, y: 130, z: 0}
+  m_IKOnFeet: 0
+  m_Mirror: 0
+  m_Tag: 
+--- !u!1107 &110780286
 StateMachine:
   serializedVersion: 2
   m_ObjectHideFlags: 3
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Base Layer
-  m_DefaultState: {fileID: 110264250}
+  m_DefaultState: {fileID: 0}
   m_States:
-  - {fileID: 110264250}
-  - {fileID: 110264252}
+  - {fileID: 110207916}
+  - {fileID: 110207918}
   m_ChildStateMachine: []
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:
     data:
-      first: {fileID: 110264252}
+      first: {fileID: 110207918}
       second: []
     data:
-      first: {fileID: 110264250}
+      first: {fileID: 110207916}
       second:
-      - {fileID: 110126262}
+      - {fileID: 110158938}
   m_MotionSetCount: 1
   m_AnyStatePosition: {x: 50, y: 20, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}

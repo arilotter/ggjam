@@ -40,8 +40,37 @@ public class Bullet : MonoBehaviour {
 		parmas.Add(gameObject);
 		parmas.Add(shooter);
 	
-		_col.gameObject.SendMessage("HitByBullet", parmas,
-    SendMessageOptions.DontRequireReceiver);
+		if (!_col.gameObject.tag.Equals(shooter))
+		{
+
+			gameObject.rigidbody2D.velocity = Vector2.zero;
+			
+			if (_col.gameObject.tag.Equals("Player 1") ||
+			_col.gameObject.tag.Equals("Player 2"))
+			{
+				PlayerController player = _col.gameObject.GetComponent<PlayerController>();
+				player.HitByBullet(getDamage());
+			}
+			//
+			// Get the Animator component from your gameObject
+			Animator anim = gameObject.GetComponent<Animator>();
+			// Sets the value
+			anim.SetTrigger("explode"); 
+			StartCoroutine(waitForExplosion());
+
+		
+		}
+	
+		/*_col.gameObject.SendMessage("HitByBullet", parmas,
+    SendMessageOptions.DontRequireReceiver);*/
+	}
+	
+		
+	IEnumerator waitForExplosion() {
+		
+		//yield return new WaitForSeconds(_gameObject.GetComponent<Bullet>().explosionTime);
+		yield return new WaitForSeconds(explosionTime);
+		DestroyObject(gameObject);
 	}
 	
 	public int getDamage(){
