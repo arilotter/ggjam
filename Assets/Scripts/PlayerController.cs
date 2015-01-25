@@ -33,7 +33,8 @@ public class PlayerController : MonoBehaviour {
 		angle = Mathf.Atan2(faceDirection.y, faceDirection.x) * Mathf.Rad2Deg;
 		transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
-		if(fire(energy, weapon.energy)) { // right trigger pressed
+		if(shouldFire(energy, weapon.energy)) { // right trigger pressed
+
 			if (weapon.fireGun())
 				energy -= weapon.energy;
 		}
@@ -67,7 +68,7 @@ public class PlayerController : MonoBehaviour {
 		DestroyObject(_gameObject);
 	}
 	
-	public bool fire(int _availEnergy, int _energy){
+	public bool shouldFire(int _availEnergy, int _energy){
 		return (Input.GetAxis("P" + playerNum + " Shoot") < 0) && (_availEnergy - _energy >= 0);
 	}
 }
