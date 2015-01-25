@@ -1,36 +1,32 @@
 fileFormatVersion: 2
-guid: 517304ec55da0274ca4fb3a436f78c0d
+guid: d1df21e7dea415247818309cbcd8f26a
 TextureImporter:
   fileIDToRecycleName:
-    21300000: dirt_floor
-    21300002: grass_floor
-    21300004: moss_stone_floor
-    21300006: stone_moss_floor
-    21300008: stone_floor
-    21300010: stone_vine_floor
-    21300012: metal_floor
-    21300014: metal_wall
-    21300016: metal_wall_2
-    21300018: metal_wall_3
-    21300020: metal_wall_caution_h
-    21300022: metal_wall_caution_v
-    21300024: metal_wall_tech_lights
-    21300026: metal_wall_tech
-    21300028: vent_h
-    21300030: vent_v
-    21300032: teleporter_1
-    21300034: teleporter_2
-    21300036: teleporter_3
-    21300038: teleporter_4
-    21300040: teleporter_5
-    21300042: teleporter_6
-    21300044: teleporter_7
-    21300046: environment_23
-    21300048: environment_24
+    21300000: powerups_0
+    21300002: powerups_1
+    21300004: powerups_2
+    21300006: powerups_3
+    21300008: powerups_4
+    21300010: powerups_5
+    21300012: powerups_6
+    21300014: powerups_7
+    21300016: powerups_8
+    21300018: powerups_9
+    21300020: powerups_10
+    21300022: powerups_11
+    21300024: powerups_12
+    21300026: powerups_13
+    21300028: powerups_14
+    21300030: powerups_15
+    21300032: powerups_16
+    21300034: powerups_17
+    21300036: powerups_18
+    21300038: powerups_19
+    21300040: powerups_20
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 0
+    enableMipMap: 1
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -68,167 +64,147 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: dirt_floor
+    - name: powerups_0
       rect:
         serializedVersion: 2
         x: 0
         y: 128
         width: 64
         height: 64
-      alignment: 3
-      pivot: {x: 1, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: grass_floor
+    - name: powerups_1
       rect:
         serializedVersion: 2
         x: 64
         y: 128
         width: 64
         height: 64
-      alignment: 3
-      pivot: {x: 1, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: moss_stone_floor
+    - name: powerups_2
       rect:
         serializedVersion: 2
         x: 128
         y: 128
         width: 64
         height: 64
-      alignment: 3
-      pivot: {x: 1, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: stone_moss_floor
+    - name: powerups_3
       rect:
         serializedVersion: 2
         x: 192
         y: 128
         width: 64
         height: 64
-      alignment: 3
-      pivot: {x: 1, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: stone_floor
+    - name: powerups_4
       rect:
         serializedVersion: 2
         x: 256
         y: 128
         width: 64
         height: 64
-      alignment: 3
-      pivot: {x: 1, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: stone_vine_floor
+    - name: powerups_5
       rect:
         serializedVersion: 2
         x: 320
         y: 128
         width: 64
         height: 64
-      alignment: 3
-      pivot: {x: 1, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: metal_floor
+    - name: powerups_6
       rect:
         serializedVersion: 2
         x: 384
         y: 128
         width: 64
         height: 64
-      alignment: 3
-      pivot: {x: 1, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: metal_wall
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 128
-        width: 64
-        height: 64
-      alignment: 3
-      pivot: {x: 1, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: metal_wall_2
+    - name: powerups_7
       rect:
         serializedVersion: 2
         x: 0
         y: 64
         width: 64
         height: 64
-      alignment: 3
-      pivot: {x: 1, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: metal_wall_3
+    - name: powerups_8
       rect:
         serializedVersion: 2
         x: 64
         y: 64
         width: 64
         height: 64
-      alignment: 3
-      pivot: {x: 1, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: metal_wall_caution_h
+    - name: powerups_9
       rect:
         serializedVersion: 2
         x: 128
         y: 64
         width: 64
         height: 64
-      alignment: 3
-      pivot: {x: 1, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: metal_wall_caution_v
+    - name: powerups_10
       rect:
         serializedVersion: 2
         x: 192
         y: 64
         width: 64
         height: 64
-      alignment: 3
-      pivot: {x: 1, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: metal_wall_tech_lights
+    - name: powerups_11
       rect:
         serializedVersion: 2
         x: 256
         y: 64
         width: 64
         height: 64
-      alignment: 3
-      pivot: {x: 1, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: metal_wall_tech
+    - name: powerups_12
       rect:
         serializedVersion: 2
         x: 320
         y: 64
         width: 64
         height: 64
-      alignment: 3
-      pivot: {x: 1, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: vent_h
+    - name: powerups_13
       rect:
         serializedVersion: 2
         x: 384
         y: 64
         width: 64
         height: 64
-      alignment: 3
-      pivot: {x: 1, y: 1}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: vent_v
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 64
-        width: 64
-        height: 64
-      alignment: 3
-      pivot: {x: 1, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: teleporter_1
+    - name: powerups_14
       rect:
         serializedVersion: 2
         x: 0
@@ -236,9 +212,9 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: teleporter_2
+    - name: powerups_15
       rect:
         serializedVersion: 2
         x: 64
@@ -246,9 +222,9 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: teleporter_3
+    - name: powerups_16
       rect:
         serializedVersion: 2
         x: 128
@@ -256,9 +232,9 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: teleporter_4
+    - name: powerups_17
       rect:
         serializedVersion: 2
         x: 192
@@ -266,9 +242,9 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: teleporter_5
+    - name: powerups_18
       rect:
         serializedVersion: 2
         x: 256
@@ -276,9 +252,9 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: teleporter_6
+    - name: powerups_19
       rect:
         serializedVersion: 2
         x: 320
@@ -286,9 +262,9 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: teleporter_7
+    - name: powerups_20
       rect:
         serializedVersion: 2
         x: 384
@@ -296,27 +272,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: environment_23
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 0
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: environment_24
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 512
-        height: 192
-      alignment: 3
-      pivot: {x: 1, y: 1}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
