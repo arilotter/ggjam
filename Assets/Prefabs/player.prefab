@@ -56,6 +56,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5ff0d744edb6294faa44b86745dd5fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movespeed: 10
+  playerNum: 1
+  weapon: {fileID: 0}
 --- !u!212 &21233344
 SpriteRenderer:
   m_ObjectHideFlags: 1
