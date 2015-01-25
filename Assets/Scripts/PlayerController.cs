@@ -1,6 +1,7 @@
-﻿using UnityEngine;
+﻿﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using XboxCtrlrInput;
 
 public class PlayerController : MonoBehaviour {
 
@@ -22,20 +23,20 @@ public class PlayerController : MonoBehaviour {
 		energy = maxEnergy;
 	}
 	
-	// Update is called once per frame
-	void Update() {
+	void FixedUpdate() {
 		//Debug.Log(energy);
-		var direction = new Vector2(Input.GetAxis("P" + playerNum + " LX"), Input.GetAxis("P" + playerNum + " LY"));
+		Vector2 direction = new Vector2(XCI.GetAxis(XboxAxis.LeftStickX, playerNum), XCI.GetAxis(XboxAxis.LeftStickY, playerNum));
 		direction *= movespeed;
 		rigidbody2D.AddForce(direction);
 
-		var rightJoy = new Vector2(Input.GetAxis ("P" + playerNum + " RX"), Input.GetAxis ("P" + playerNum + " RY"));
-		var faceDirection = (rightJoy != Vector2.zero ? rightJoy : (rigidbody2D.velocity));
+		Vector2 rightJoy = new Vector2(XCI.GetAxis(XboxAxis.RightStickX, playerNum), XCI.GetAxis(XboxAxis.RightStickY, playerNum));
+		Vector2 faceDirection = (rightJoy != Vector2.zero ? rightJoy : (rigidbody2D.velocity));
 
 		angle = Mathf.Atan2(faceDirection.y, faceDirection.x) * Mathf.Rad2Deg;
 		transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
-		if(fire(energy, weapon.energy)) { // right trigger pressed
+		if(shouldFire(energy, weapon.energy)) { // right trigger pressed
+
 			if (weapon.fireGun())
 				energy -= weapon.energy;
 		}
@@ -48,12 +49,8 @@ public class PlayerController : MonoBehaviour {
 	}
 	
 	void HitByBullet(ArrayList list){
-
-		//Debug.Log("xx");	
-		//Debug.Log(list[1]);
 		if (!list[1].Equals(gameObject.tag))
 		{
-//			Debug.Log(gameObject.tag);
 			GameObject bul = (GameObject)list[0];
 			bul.rigidbody2D.velocity = Vector2.zero;
 			Bullet bullet = bul.GetComponent<Bullet>();
@@ -76,7 +73,7 @@ public class PlayerController : MonoBehaviour {
 		DestroyObject(_gameObject);
 	}
 	
-	public bool fire(int _availEnergy, int _energy){
-		return (Input.GetAxis("P" + playerNum + " Shoot") < 0) && (_availEnergy - _energy >= 0);
+	public bool shouldFire(int _availEnergy, int _energy){
+		return (XCI.GetAxis(XboxAxis.RightTrigger, playerNum) > 0) && (_availEnergy - _energy >= 0);
 	}
 }
