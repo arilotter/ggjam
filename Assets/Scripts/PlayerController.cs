@@ -23,12 +23,12 @@ public class PlayerController : MonoBehaviour {
 	// Update is called once per frame
 	void Update() {
 		//Debug.Log(energy);
-		var direction = new Vector2(Input.GetAxis("P" + playerNum + " LX"), Input.GetAxis("P" + playerNum + " LY"));
+		Vector2 direction = new Vector2(Input.GetAxis("P" + playerNum + " LX"), Input.GetAxis("P" + playerNum + " LY"));
 		direction *= movespeed;
 		rigidbody2D.AddForce(direction);
 
-		var rightJoy = new Vector2(Input.GetAxis ("P" + playerNum + " RX"), Input.GetAxis ("P" + playerNum + " RY"));
-		var faceDirection = (rightJoy != Vector2.zero ? rightJoy : (rigidbody2D.velocity));
+		Vector2 rightJoy = new Vector2(Input.GetAxis ("P" + playerNum + " RX"), Input.GetAxis ("P" + playerNum + " RY"));
+		Vector2 faceDirection = (rightJoy != Vector2.zero ? rightJoy : (rigidbody2D.velocity));
 
 		angle = Mathf.Atan2(faceDirection.y, faceDirection.x) * Mathf.Rad2Deg;
 		transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);

@@ -100,7 +100,7 @@ InputManager:
     invert: 0
     type: 2
     axis: 0
-    joyNum: 2
+    joyNum: 3
   - serializedVersion: 3
     m_Name: P2 LY
     descriptiveName: 
@@ -116,7 +116,7 @@ InputManager:
     invert: 1
     type: 2
     axis: 1
-    joyNum: 2
+    joyNum: 3
   - serializedVersion: 3
     m_Name: P2 RX
     descriptiveName: 
@@ -132,7 +132,7 @@ InputManager:
     invert: 0
     type: 2
     axis: 3
-    joyNum: 2
+    joyNum: 3
   - serializedVersion: 3
     m_Name: P2 RY
     descriptiveName: 
@@ -148,7 +148,7 @@ InputManager:
     invert: 1
     type: 2
     axis: 4
-    joyNum: 2
+    joyNum: 3
   - serializedVersion: 3
     m_Name: P2 Shoot
     descriptiveName: 
@@ -164,4 +164,4 @@ InputManager:
     invert: 0
     type: 2
     axis: 2
-    joyNum: 2
+    joyNum: 3

@@ -5,6 +5,9 @@ TagManager:
   tags:
   - Player 1
   - Player 2
+  - Player 1 Camera
+  - Player 2 Camera
+  - CameraMask
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
