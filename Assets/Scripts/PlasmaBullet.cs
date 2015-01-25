@@ -1,22 +1,26 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class BasicBullet : Bullet {
+public class PlasmaBullet : Bullet {
 
 	public Sprite bulletSprite;
 	
-	public BasicBullet () {
-		type="basic";
+	public PlasmaBullet () {
+		type="plasma";
 		vel = 5;
 		//public Vector2 position;
-
 	}
-
-		// Use this for initialization
+	
+	// Use this for initialization
 	void Start () {
 		sRender = gameObject.GetComponent<SpriteRenderer>();		
 		sRender.sprite = bulletSprite;
-				Debug.Log(explosionTime);
 
+
+	}
+	
+	// Update is called once per frame
+	void Update () {
+	
 	}
 }

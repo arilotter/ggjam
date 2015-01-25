@@ -8,13 +8,14 @@ public class Weapon : MonoBehaviour {
 	public WeaponType type;
 	public int fireSpeed = 0;
 	public int energy;
-	
+	string parentTag;
 	int wait = 0;
 	int side = 1;
 	//public PlayerController player;
 
 	// Use this for initialization
 	void Start () {
+		parentTag = transform.parent.gameObject.tag;
 	}
 	
 	// Update is called once per frame
@@ -31,11 +32,8 @@ public class Weapon : MonoBehaviour {
 			clone = Instantiate(_bullet, transform.position, transform.rotation) as Bullet;
 			transform.Translate(0, offset.y*side, 0);
 			side *= -1;
+			clone.shooter = parentTag;
 			clone.rigidbody2D.velocity = transform.right * clone.vel;
-			clone.shooter = transform.parent.gameObject.tag;
-
-			
-			
 			
 			wait = fireSpeed;
 			return true;
