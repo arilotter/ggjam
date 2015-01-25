@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour {
 
 	public Scrollbar healthbar;
 	public Scrollbar energybar;
+	public Scrollbar shieldbar;
 	public int playerNum;
 	public Weapon weapon;
 	public int maxHealth = 999999;
@@ -47,6 +48,7 @@ public class PlayerController : MonoBehaviour {
 			
 		healthbar.size = (float)health/maxHealth;
 		energybar.size = (float)energy/maxEnergy;
+		shieldbar.size = (float)shield/maxShield;
 	}
 	
 	public void HitByBullet(int damage){
