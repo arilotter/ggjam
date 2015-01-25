@@ -28,8 +28,17 @@ public class Weapon : MonoBehaviour {
 		if (wait == 0)
 		{
 			Bullet clone;
-			Vector3 offset = transform.parent.gameObject.GetComponent<SpriteRenderer>().sprite.bounds.extents;
-			clone = Instantiate(_bullet, transform.position, transform.rotation) as Bullet;
+
+			string sideStr = "left";
+			if (side < 0)
+				sideStr = "right";
+			Transform weaponSide;
+			weaponSide = transform.Find(sideStr);
+
+			//Vector3 offset = transform.parent.gameObject.GetComponent<SpriteRenderer>().sprite.bounds.extents;
+			Vector3 offset = weaponSide.GetComponent<SpriteRenderer>().sprite.bounds.extents;
+			
+			clone = Instantiate(_bullet, weaponSide.transform.position, weaponSide.transform.rotation) as Bullet;
 			transform.Translate(0, offset.y*side, 0);
 			side *= -1;
 			clone.shooter = parentTag;
