@@ -19,7 +19,8 @@ public class Weapon : MonoBehaviour {
             fireGun();
 	}
 	
-	void fireGun(){
+	public void fireGun(){
+		Debug.Log("FIRE");
 		_bullet.rigidbody2D.velocity = new Vector2(5, 0);
 	}
 }
