@@ -9,10 +9,11 @@ GameObject:
   m_Component:
   - 4: {fileID: 475034}
   - 212: {fileID: 21275034}
-  - 114: {fileID: 11475034}
   - 50: {fileID: 5075034}
   - 58: {fileID: 5875034}
   - 95: {fileID: 9561274}
+  - 114: {fileID: 11470262}
+  - 114: {fileID: 11475034}
   m_Layer: 11
   m_Name: bullet
   m_TagString: bullet
@@ -73,9 +74,27 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11475034
+--- !u!114 &11470262
 MonoBehaviour:
   m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 175034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf807ad0e46f1754895ebd72cf00b016, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vel: 5
+  position: {x: 0, y: 0}
+  type: basic
+  damage: 50
+  shooter: 
+  explosionTime: .5
+  bulletSprite: {fileID: 21300062, guid: 01f56daf7c2b4d142835849347dbebd0, type: 3}
+--- !u!114 &11475034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 175034}

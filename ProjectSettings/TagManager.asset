@@ -23,7 +23,7 @@ TagManager:
   User Layer 9: p2cam
   User Layer 10: mesk
   User Layer 11: bullets
-  User Layer 12: 
+  User Layer 12: weapon
   User Layer 13: 
   User Layer 14: 
   User Layer 15: 
@@ -47,4 +47,12 @@ TagManager:
   - name: Default
     userID: 0
     uniqueID: 0
+    locked: 0
+  - name: weapons
+    userID: 1
+    uniqueID: 208265321
+    locked: 0
+  - name: player
+    userID: 2
+    uniqueID: 1080821691
     locked: 0

@@ -39,7 +39,7 @@ public class Weapon : MonoBehaviour {
 			Vector3 offset = weaponSide.GetComponent<SpriteRenderer>().sprite.bounds.extents;
 			
 			clone = Instantiate(_bullet, weaponSide.transform.position, weaponSide.transform.rotation) as Bullet;
-			transform.Translate(0, offset.y*side, 0);
+			//transform.Translate(0, offset.y*side, 0);
 			side *= -1;
 			clone.shooter = parentTag;
 			clone.rigidbody2D.velocity = transform.right * clone.vel;
