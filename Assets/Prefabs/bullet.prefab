@@ -12,6 +12,7 @@ GameObject:
   - 114: {fileID: 11475034}
   - 50: {fileID: 5075034}
   - 58: {fileID: 5875034}
+  - 95: {fileID: 9561274}
   m_Layer: 0
   m_Name: bullet
   m_TagString: Untagged
@@ -57,6 +58,21 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_Radius: .319999993
   m_Center: {x: 0, y: 0}
+--- !u!95 &9561274
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 175034}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ea0139a22711e384c9d3cc3bfd544ce2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &11475034
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -68,8 +84,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c48fdf4fca9fe484e8754991d4df9b2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocity: {x: 0, y: 0}
+  vel: 3
+  position: {x: 0, y: 0}
   type: 
+  fireSpeed: 25
 --- !u!212 &21275034
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -90,7 +108,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 688558b3817ad1147a254cbc489302b3, type: 3}
+  m_Sprite: {fileID: 21300062, guid: 01f56daf7c2b4d142835849347dbebd0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:

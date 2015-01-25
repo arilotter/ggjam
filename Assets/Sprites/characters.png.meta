@@ -1,0 +1,379 @@
+fileFormatVersion: 2
+guid: 01f56daf7c2b4d142835849347dbebd0
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: char_grenadeer_1
+    21300002: char_grenadeer_2
+    21300004: char_grenadeer_3
+    21300006: char_sprayer_1
+    21300008: char_sprayer_2
+    21300010: char_sprayer_3
+    21300012: char_plasma_1
+    21300014: char_plasma_1
+    21300016: chaingun_muzzle_flash_1
+    21300018: chaingun_muzzle_flash_2
+    21300020: plasmagun_muzzle-flash_1
+    21300022: plasmagun_muzzle-flash_2
+    21300024: rpg_explode_1
+    21300026: chaingunn_bullet
+    21300028: plasmagun_muzzle-flash_3
+    21300030: plasmagun_bullet
+    21300032: rpg_2
+    21300034: rpg_2
+    21300036: rpg
+    21300038: rpg_explode_2
+    21300040: rpg_explode_3
+    21300042: characters_21
+    21300044: rpg_explode_5
+    21300046: rpg_explode_6
+    21300048: rpg_explode_7
+    21300050: plasma_explode_1
+    21300052: plasma_explode_2
+    21300054: plasma_explode_3
+    21300056: bullet_spark
+    21300058: plasma_explode_4
+    21300060: rpg_explode_4
+    21300062: rpg_1
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: char_grenadeer_1
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 452
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: char_grenadeer_2
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 451
+        width: 61
+        height: 57
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: char_grenadeer_3
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 452
+        width: 61
+        height: 57
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: char_sprayer_1
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 385
+        width: 50
+        height: 62
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: char_sprayer_2
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 385
+        width: 55
+        height: 62
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: char_sprayer_3
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 385
+        width: 55
+        height: 62
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: char_plasma_1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 322
+        width: 61
+        height: 61
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: char_plasma_1
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 322
+        width: 61
+        height: 61
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chaingun_muzzle_flash_1
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 357
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chaingun_muzzle_flash_2
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 357
+        width: 30
+        height: 23
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: plasmagun_muzzle-flash_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 328
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: plasmagun_muzzle-flash_2
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 322
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rpg_explode_1
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 271
+        width: 37
+        height: 43
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: chaingunn_bullet
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 309
+        width: 14
+        height: 6
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: plasmagun_muzzle-flash_3
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 289
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: plasmagun_bullet
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 293
+        width: 30
+        height: 21
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rpg_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 259
+        width: 56
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rpg_1
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 259
+        width: 56
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rpg_explode_2
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 202
+        width: 52
+        height: 48
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rpg_explode_3
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 203
+        width: 43
+        height: 44
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: characters_21
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 206
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rpg_explode_5
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 140
+        width: 38
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rpg_explode_6
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 141
+        width: 37
+        height: 38
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rpg_explode_7
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 142
+        width: 35
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: plasma_explode_1
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 79
+        width: 37
+        height: 43
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: plasma_explode_2
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 74
+        width: 52
+        height: 48
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: plasma_explode_3
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 77
+        width: 42
+        height: 43
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bullet_spark
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 39
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: plasma_explode_4
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 14
+        width: 35
+        height: 37
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: rpg_explode_4
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 204
+        width: 37
+        height: 43
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

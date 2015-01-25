@@ -6,8 +6,8 @@ public class Weapon : MonoBehaviour {
 	public Bullet _bullet;
 	public enum WeaponType{rpgs, chainGun, plasma};	
 	public WeaponType type;
-	public int damage;
 	public int energy;
+	int wait = 0;
 	//public PlayerController player;
 
 	// Use this for initialization
@@ -21,14 +21,20 @@ public class Weapon : MonoBehaviour {
             fireGun();
 	}
 	
-	public void fireGun(){
-		Debug.Log("FIRE");
-	
-		Rigidbody2D clone;
-		clone = Instantiate(_bullet.rigidbody2D, transform.position, transform.rotation) as Rigidbody2D;
-		//clone.velocity = transform.TransformDirection(Vector3.forward * 10);		
-		clone.velocity = transform.right * 5;
-		
+	public bool fireGun(){
+		if (wait == 0)
+		{
+			Debug.Log(wait);
+			Bullet clone;
+			clone = Instantiate(_bullet, transform.position, transform.rotation) as Bullet;
+			//clone.velocity = transform.TransformDirection(Vector3.forward * 10);		
+			clone.rigidbody2D.velocity = transform.right * clone.vel;
+			wait = clone.fireSpeed;
+			return true;
+		}
+		else
+			wait --;
+		return false;
 		//_bullet.rigidbody2D.velocity = new Vector2(5, 0);
 	}
 }

@@ -3,14 +3,18 @@ using System.Collections;
 
 public class Bullet : MonoBehaviour {
 
-	public Vector2 velocity;
+	public int vel;
 	public Vector2 position;
 	public string type;
 	public int fireSpeed;
+	public int damage;
 
 	public Bullet()
 	{
-	
+		vel = 5;
+		//public Vector2 position;
+		fireSpeed = 50;	
+		damage = 50;
 	}
 	
 	// Use this for initialization
@@ -27,4 +31,12 @@ public class Bullet : MonoBehaviour {
   {
      DestroyObject(gameObject);
   }
+  
+  	void OnCollisionEnter2D(Collision2D _col){
+		DestroyObject(gameObject);
+	}
+	
+	public int getDamage(){
+		return damage;
+	}
 }
