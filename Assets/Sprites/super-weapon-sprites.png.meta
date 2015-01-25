@@ -1,0 +1,146 @@
+fileFormatVersion: 2
+guid: 190ff0f498cef50498b1e74eac863a84
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: super-weapon-large-beam
+    21300002: super-weapon-small-beam
+    21300004: super-weapon-large-beam-ring
+    21300006: super-weapon-small-beam-ring
+    21300008: super-weapon-sprites_4
+    21300010: super-weapon-scharge-1
+    21300012: super-weapon-scharge-2
+    21300014: super-weapon-scharge-3
+    21300016: super-weapon-scharge-4
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 64
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: super-weapon-large-beam
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 63
+        height: 320
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: super-weapon-small-beam
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 353
+        width: 63
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: super-weapon-large-beam-ring
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 321
+        width: 320
+        height: 319
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: super-weapon-small-beam-ring
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 65
+        width: 256
+        height: 255
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: super-weapon-sprites_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 104
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: super-weapon-scharge-1
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 196
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: super-weapon-scharge-2
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 196
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: super-weapon-scharge-3
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 68
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: super-weapon-scharge-4
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 68
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
