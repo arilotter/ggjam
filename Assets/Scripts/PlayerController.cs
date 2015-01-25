@@ -10,16 +10,20 @@ public class PlayerController : MonoBehaviour {
 
 	public Scrollbar healthbar;
 	public Scrollbar energybar;
+	public Scrollbar shieldbar;
 	public int playerNum;
 	public Weapon weapon;
 	public int maxHealth = 999999;
 	public int maxEnergy = 999999;
+	public int maxShield = 100;
 	int health;
 	int energy;
+	int shield;
 
 	void Start() {
 		health = maxHealth;
 		energy = maxEnergy;
+		shield = 0;
 	}
 	
 	void FixedUpdate() {
@@ -44,10 +48,19 @@ public class PlayerController : MonoBehaviour {
 			
 		healthbar.size = (float)health/maxHealth;
 		energybar.size = (float)energy/maxEnergy;
+		shieldbar.size = (float)shield/maxShield;
 	}
 	
 	public void HitByBullet(int damage){
-		health -= damage;
+		if(shield > 0) {
+			shield -= damage;
+			if(shield < 0) {
+				health -= shield;
+				shield = 0;
+			}
+		} else {
+			health -= damage;
+		}
 	}
 	
 	/*void HitByBullet(ArrayList list){
@@ -70,5 +83,17 @@ public class PlayerController : MonoBehaviour {
 	
 	public bool shouldFire(int _availEnergy, int _energy){
 		return (Input.GetAxis("P" + playerNum + " Shoot") < 0) && (_availEnergy - _energy >= 0);
+	}
+
+	public void heal(int h) {
+		this.health = Mathf.Min(this.health + h, this.maxHealth);
+	}
+
+	public void addEnergy(int e) {
+		this.energy = Mathf.Min(this.energy + e, this.maxEnergy);
+	}
+
+	public void addShield(int s) {
+		this.shield = Mathf.Min(this.shield + s, this.maxShield);
 	}
 }

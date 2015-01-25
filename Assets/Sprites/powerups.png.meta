@@ -78,7 +78,7 @@ TextureImporter:
         y: 192
         width: 64
         height: 64
-      alignment: 3
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: powerups_1
@@ -88,7 +88,7 @@ TextureImporter:
         y: 192
         width: 64
         height: 64
-      alignment: 3
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: powerups_2
@@ -98,8 +98,8 @@ TextureImporter:
         y: 192
         width: 64
         height: 64
-      alignment: 3
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: powerups_3
       rect:
@@ -108,7 +108,7 @@ TextureImporter:
         y: 192
         width: 64
         height: 64
-      alignment: 3
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: powerups_4
@@ -118,7 +118,7 @@ TextureImporter:
         y: 192
         width: 64
         height: 64
-      alignment: 3
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: powerups_5
@@ -128,7 +128,7 @@ TextureImporter:
         y: 192
         width: 64
         height: 64
-      alignment: 3
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: powerups_6
@@ -138,7 +138,7 @@ TextureImporter:
         y: 192
         width: 64
         height: 64
-      alignment: 3
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: powerups_7
@@ -148,7 +148,7 @@ TextureImporter:
         y: 128
         width: 64
         height: 64
-      alignment: 3
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: powerups_8
@@ -158,7 +158,7 @@ TextureImporter:
         y: 128
         width: 64
         height: 64
-      alignment: 3
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: powerups_9
@@ -168,8 +168,8 @@ TextureImporter:
         y: 128
         width: 64
         height: 64
-      alignment: 3
-      pivot: {x: 0, y: 0}
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: powerups_10
       rect:
@@ -178,7 +178,7 @@ TextureImporter:
         y: 128
         width: 64
         height: 64
-      alignment: 3
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: powerups_11
@@ -188,7 +188,7 @@ TextureImporter:
         y: 128
         width: 64
         height: 64
-      alignment: 3
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: powerups_12
@@ -198,7 +198,7 @@ TextureImporter:
         y: 128
         width: 64
         height: 64
-      alignment: 3
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: powerups_13
@@ -208,7 +208,7 @@ TextureImporter:
         y: 128
         width: 64
         height: 64
-      alignment: 3
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: powerups_14
@@ -218,7 +218,7 @@ TextureImporter:
         y: 64
         width: 64
         height: 64
-      alignment: 3
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: powerups_15
@@ -228,7 +228,7 @@ TextureImporter:
         y: 64
         width: 64
         height: 64
-      alignment: 3
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: powerups_16
@@ -238,7 +238,7 @@ TextureImporter:
         y: 64
         width: 64
         height: 64
-      alignment: 3
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: powerups_17
@@ -248,7 +248,7 @@ TextureImporter:
         y: 64
         width: 64
         height: 64
-      alignment: 3
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: powerups_18
@@ -258,7 +258,7 @@ TextureImporter:
         y: 64
         width: 64
         height: 64
-      alignment: 3
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: powerups_19
@@ -268,7 +268,7 @@ TextureImporter:
         y: 64
         width: 64
         height: 64
-      alignment: 3
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: powerups_20
@@ -278,7 +278,7 @@ TextureImporter:
         y: 64
         width: 64
         height: 64
-      alignment: 3
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: powerups_21
@@ -288,7 +288,7 @@ TextureImporter:
         y: 0
         width: 64
         height: 64
-      alignment: 3
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: powerups_22
@@ -298,7 +298,7 @@ TextureImporter:
         y: 0
         width: 64
         height: 64
-      alignment: 3
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: powerups_23
@@ -308,7 +308,7 @@ TextureImporter:
         y: 0
         width: 64
         height: 64
-      alignment: 3
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: powerups_24
@@ -318,7 +318,7 @@ TextureImporter:
         y: 0
         width: 64
         height: 64
-      alignment: 3
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: powerups_25
@@ -328,7 +328,7 @@ TextureImporter:
         y: 0
         width: 64
         height: 64
-      alignment: 3
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: powerups_26
@@ -338,7 +338,7 @@ TextureImporter:
         y: 0
         width: 64
         height: 64
-      alignment: 3
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: powerups_27
@@ -348,7 +348,7 @@ TextureImporter:
         y: 0
         width: 64
         height: 64
-      alignment: 3
+      alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
