@@ -1,4 +1,4 @@
-﻿﻿using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 using XboxCtrlrInput;
@@ -25,11 +25,11 @@ public class PlayerController : MonoBehaviour {
 	
 	void FixedUpdate() {
 		//Debug.Log(energy);
-		Vector2 direction = new Vector2(XCI.GetAxis(XboxAxis.LeftStickX, playerNum), XCI.GetAxis(XboxAxis.LeftStickY, playerNum));
+		Vector2 direction = new Vector2(Input.GetAxis("P" + playerNum + " LX"), Input.GetAxis("P" + playerNum + " LY"));
 		direction *= movespeed;
 		rigidbody2D.AddForce(direction);
 
-		Vector2 rightJoy = new Vector2(XCI.GetAxis(XboxAxis.RightStickX, playerNum), XCI.GetAxis(XboxAxis.RightStickY, playerNum));
+		Vector2 rightJoy = new Vector2(Input.GetAxis("P" + playerNum + " RX"), Input.GetAxis("P" + playerNum + " RY"));
 		Vector2 faceDirection = (rightJoy != Vector2.zero ? rightJoy : (rigidbody2D.velocity));
 
 		angle = Mathf.Atan2(faceDirection.y, faceDirection.x) * Mathf.Rad2Deg;
@@ -74,6 +74,6 @@ public class PlayerController : MonoBehaviour {
 	}
 	
 	public bool shouldFire(int _availEnergy, int _energy){
-		return (XCI.GetAxis(XboxAxis.RightTrigger, playerNum) > 0) && (_availEnergy - _energy >= 0);
+		return (Input.GetAxis("P" + playerNum + " Shoot") < 0) && (_availEnergy - _energy >= 0);
 	}
 }
